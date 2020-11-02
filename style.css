@@ -22,10 +22,22 @@ justify-content: center;
 }
 .monday{
 margin-top: 10px;
+
 }
 
 .monday_text{
     padding-top: 5px;
 font-weight: 700;
 font-size: 20px;
+}
+.link{
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+.link_href{
+   background-color: black;
+   color: blanchedalmond;
+   text-decoration: none;
 }
