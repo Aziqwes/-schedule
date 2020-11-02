@@ -2,16 +2,30 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-.Schedule{
-    
+.schedule{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.schedule_text{
+
+}
+.day{
+display: flex;
+justify-content: center;
+}
+.day_text{
+
 }
 .schedule_on_monday{
    
 }
 .monday{
-
+margin-top: 10px;
 }
+
 .monday_text{
     padding-top: 5px;
-    
+font-weight: 700;
+font-size: 20px;
 }
