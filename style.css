@@ -1,5 +1,12 @@
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color: rgb(85, 85, 85);
+}
+.schedule_text {
+    font-size: 2.4rem;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
 }
 .schedule {
     display: flex;
@@ -10,25 +17,40 @@ body {
     display: flex;
     justify-content: center;
 }
-.day_text {
-}
-.schedule_on_monday {
-}
 .monday {
     margin-top: 10px;
 }
-
+.day_text {
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+}
 .monday_text {
+    color: rgb(85, 85, 85);
     padding-top: 5px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
 }
 .link {
+    margin-top: 70%;
     display: flex;
     justify-content: space-between;
+    padding: 5%;
 }
 .link_href {
-    background-color: black;
-    color: blanchedalmond;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: rgb(210, 239, 255);
+    color: rgb(75, 75, 75);
     text-decoration: none;
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 90px;
+}
+.schedule_on_monday {
+    margin-top: 20%;
+    padding: 5%;
 }
