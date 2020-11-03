@@ -1,4 +1,19 @@
-var d = new Date();
+function Spoiler() {
+	var ele = document.getElementById("contentSpoiler");
+	var text = document.getElementById("linkSpoiler");
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+		text.innerHTML = "Понедельник";
+  	}
+	else {
+		ele.style.display = "block";
+		text.innerHTML = "Скрыть";
+	}
+}
+
+
+
+/*var d = new Date();
 theDay=d.getDay();
 switch (theDay)
 {
@@ -25,3 +40,4 @@ case 0:
  break;
 default:
  document.write("<b>oops...</b>");
+}*/
