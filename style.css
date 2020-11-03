@@ -13,14 +13,14 @@ body {
     align-items: center;
     justify-content: center;
 }
-.day {
+.day_monday {
     display: flex;
     justify-content: center;
 }
 .monday {
     margin-top: 10px;
 }
-.day_text {
+.day_monday_text {
     font-size: 1.8rem;
     margin: 0;
     padding: 0;
@@ -54,3 +54,29 @@ body {
     margin-top: 20%;
     padding: 5%;
 }
+.day_tuesday{
+    margin-top: 10px;
+}
+.day_tuesday_text{
+display: flex;
+justify-content: center;
+font-size: 1.8rem;
+margin: 0;
+padding: 0;
+
+
+}
+.schedule_on_tuesday{
+    color: rgb(85, 85, 85);
+    padding-top: 5px;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+}
+.tuesday_text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+   
+    padding-top: 10px;
+    font-weight: 700;
+    margin-left: 5%;
