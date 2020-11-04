@@ -10,34 +10,44 @@ function Spoiler() {
 		text.innerHTML = "Скрыть";
 	}
 }
+var d = new Date();
+        theDay=d.getDay();  
+        var table_1="Расписание на monday!";  
+        var table_2="Расписание на Tuesday!";  
+        var table_3="Расписание на Wednesday!";  
+        var table_4="Расписание на Thursday!";  
+        var table_5="Расписание на Friday!";  
+        var table_6="Расписание на Saturday!";    
+        switch (theDay)
+        {
+        case 1:
+            document.getElementById("output").innerHTML=table_1;
+          
+        case 2:
+            document.getElementById("output").innerHTML=table_2;
+          
+            break;
+        case 3:
+            document.getElementById("output").innerHTML=table_3;
+          
+            
+            break;
+        case 4:
+            document.getElementById("output").innerHTML=table_4;
+            break;
+        case 5:
+            document.getElementById("output").innerHTML=table_5;
+          
+         break;
+        case 6:
+            document.getElementById("output").innerHTML=table_6;
+          
+         break;
+        case 0:
+         
+         break;
+        default:
+         document.write("<b>oops...</b>");
+        }  
 
 
-
-/*var d = new Date();
-theDay=d.getDay();
-switch (theDay)
-{
-case 1:
- document.write("<b>Здесь должно быть расписание на ПОНЕДЕЛЬНИК</b>");
- break;
-case 2:
- document.write("<b>Здесь должно быть расписание на ВТОРНИК</b>");
- break;
-case 3:
- document.write("<b>Здесь должно быть расписание на СРЕДУ</b>");
- break;
-case 4:
- document.write("<b>Здесь должно быть расписание на ЧЕТВЕРГ</b>");
- break;
-case 5:
- document.write("<b>Здесь должно быть расписание на ПЯТНИЦУ</b>");
- break;
-case 6:
- document.write("<b>Здесь должно быть расписание на СУББОТУ</b>");
- break;
-case 0:
- document.write("<b>Сегодня выходной!</b>");
- break;
-default:
- document.write("<b>oops...</b>");
-}*/
