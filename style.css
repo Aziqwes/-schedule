@@ -1,134 +1,72 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 10px;
-    color: rgb(85, 85, 85);
-<<<<<<< Updated upstream
+    font-family: 'Roboto';
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: rgb(36, 35, 35);
+    background-color: rgb(212, 208, 208);
 }
-.schedule_text {
-    font-size: 2.4rem;
-    letter-spacing: 0.2rem;
-    font-weight: bold;
-}
-=======
-}
-.schedule_text {
-    font-size: 2.4rem;
-    letter-spacing: 0.2rem;
-    font-weight: bold;
-}
->>>>>>> Stashed changes
-.schedule {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-<<<<<<< Updated upstream
-.day_monday {
-    display: flex;
-    justify-content: center;
-}
-.monday {
-    margin-top: 10px;
-}
-.day_monday_text {
-    font-size: 1.8rem;
+h1,
+h2 {
     margin: 0;
     padding: 0;
 }
-.monday_text {
-    color: rgb(85, 85, 85);
-    padding-top: 5px;
-    font-weight: 700;
-    font-size: 1.6rem;
-    letter-spacing: 0.2rem;
+h1 {
+    font-size: 42px;
+    margin: 60px 0;
 }
-.link {
-    margin-top: 20%;
-    display: flex;
-    justify-content: space-between;
-    padding: 5%;
+h2 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
-.link_href {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background-color: rgb(210, 239, 255);
-    color: rgb(75, 75, 75);
-    text-decoration: none;
-    font-size: 2.6rem;
-    font-weight: bold;
-    text-align: center;
-    line-height: 90px;
-}
-.schedule_on_monday {
-    margin-top: 20%;
-    padding: 5%;
-}
-.day_tuesday{
-    margin-top: 10px;
-}
-.day_tuesday_text{
-display: flex;
-justify-content: center;
-font-size: 1.8rem;
-margin: 0;
-padding: 0;
-
-
-}
-.schedule_on_tuesday{
-=======
-.day {
-    display: flex;
-    justify-content: center;
-}
-.monday {
-    margin-top: 10px;
-}
-.day_text {
-    font-size: 1.8rem;
-    margin: 0;
+ol {
+    list-style-type: none;
     padding: 0;
 }
-.monday_text {
->>>>>>> Stashed changes
-    color: rgb(85, 85, 85);
-    padding-top: 5px;
-    font-weight: 700;
-    font-size: 1.6rem;
-    letter-spacing: 0.2rem;
-<<<<<<< Updated upstream
-    margin-top: 20%;
+li {
+    letter-spacing: 3px;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: bold;
+    padding: 0;
+    cursor: pointer;
+    transition: 0.5s ease;
+    max-width: 320px;
+    margin: 0 auto;
+    border-radius: 5px;
 }
-.tuesday_text{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
-   
-    padding-top: 10px;
-    font-weight: 700;
-    margin-left: 5%;
-=======
+li:hover {
+    background-color: #fff;
 }
-.link {
-    margin-top: 70%;
+._hidden {
+    display: none;
+}
+._active {
+    display: block;
+}
+
+.arrow {
+    margin: 30px auto;
     display: flex;
     justify-content: space-between;
-    padding: 5%;
+    max-width: 800px;
+    margin-top: 15%;
+    padding: 0 20px;
 }
-.link_href {
-    width: 90px;
-    height: 90px;
+.arrow__back,
+.arrow__next {
+    min-width: 70px;
+    min-height: 70px;
     border-radius: 50%;
-    background-color: rgb(210, 239, 255);
-    color: rgb(75, 75, 75);
-    text-decoration: none;
-    font-size: 2.6rem;
+    border: 2px solid rgb(36, 35, 35);
+    cursor: pointer;
     font-weight: bold;
-    text-align: center;
-    line-height: 90px;
+    font-size: 30px;
+    transition: 0.3s ease;
 }
-.schedule_on_monday {
-    margin-top: 20%;
-    padding: 5%;
+.arrow__next:hover,
+.arrow__back:hover {
+    background-color: rgb(255, 255, 255);
 }
->>>>>>> Stashed changes

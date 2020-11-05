@@ -1,53 +1,48 @@
-function Spoiler() {
-	var ele = document.getElementById("contentSpoiler");
-	var text = document.getElementById("linkSpoiler");
-	if(ele.style.display == "block") {
-    		ele.style.display = "none";
-		text.innerHTML = "Понедельник";
-  	}
-	else {
-		ele.style.display = "block";
-		text.innerHTML = "Скрыть";
-	}
+const nowDate = new Date();
+const theDay = nowDate.getDay();
+const buttonBack = document.querySelector('.arrow__back');
+const buttonNext = document.querySelector('.arrow__next');
+
+let dayTitle = document.querySelector('#dayTitle');
+let scheduleText = document.querySelectorAll('.schedule__day');
+let dayTitleAdd = '';
+
+for (let i = 0; i < scheduleText.length; i++) {
+    scheduleText[i].classList.remove('_active');
+    scheduleText[i].classList.add('_hidden');
 }
-var d = new Date();
-        theDay=d.getDay();  
-        var table_1="Расписание на monday!";  
-        var table_2="Расписание на Tuesday!";  
-        var table_3="Расписание на Wednesday!";  
-        var table_4="Расписание на Thursday!";  
-        var table_5="Расписание на Friday!";  
-        var table_6="Расписание на Saturday!";    
-        switch (theDay)
-        {
-        case 1:
-            document.getElementById("output").innerHTML=table_1;
-          
-        case 2:
-            document.getElementById("output").innerHTML=table_2;
-          
-            break;
-        case 3:
-            document.getElementById("output").innerHTML=table_3;
-          
-            
-            break;
-        case 4:
-            document.getElementById("output").innerHTML=table_4;
-            break;
-        case 5:
-            document.getElementById("output").innerHTML=table_5;
-          
-         break;
-        case 6:
-            document.getElementById("output").innerHTML=table_6;
-          
-         break;
-        case 0:
-         
-         break;
-        default:
-         document.write("<b>oops...</b>");
-        }  
+scheduleText[theDay].classList.add('_active');
 
+switch (theDay) {
+    case 0:
+        dayTitleAdd = 'сегодня воскресенье';
+        break;
+    case 1:
+        dayTitleAdd = 'сегодня понедельник';
+        break;
+    case 2:
+        dayTitleAdd = 'сегодня вторник';
+        break;
+    case 3:
+        dayTitleAdd = 'сегодня среда';
+        break;
+    case 4:
+        dayTitleAdd = 'сегодня четверг';
+        break;
+    case 5:
+        dayTitleAdd = 'сегодня пятница';
+        break;
+    case 6:
+        dayTitleAdd = 'сегодня суббота';
+        break;
+}
+dayTitle.innerHTML = dayTitleAdd;
 
+buttonBack.addEventListener('click', () => {
+    alert('Нажал кнопку назад! Оброботай этот запрос в JS строка 42');
+    // Писать логику здесь
+});
+buttonNext.addEventListener('click', () => {
+    alert('Нажал кнопку Вперед! Оброботай этот запрос в JS строка 45');
+    // Писать логику здесь
+});

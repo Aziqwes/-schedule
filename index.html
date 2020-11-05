@@ -8,90 +8,66 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-      <!--  <div class="schedule">
-            <h1 class="schedule_text">Расписание</h1>
-        </div>
-        <div class="day_monday">
-            <h2 class="day_monday_text">Понедельник</h2>
-        </div>
-        <a href="javascript:Spoiler();" class="link_spoiler" id="linkSpoiler"><h1>Понедельник</h1></a>
-              
-              <div id="contentSpoiler" style="display: none;">
-                <ol class="monday">
-                    <li class="monday_text">Химия</li>
-                    <li class="monday_text">Физика</li>
-                    <li class="monday_text">И.К.Т</li>
-                    <li class="monday_text">Геометрия</li>
-                </ol>
-            </div>
-        </div>
-
-<ol>
-    <li class="tuesday_text">Литература</li>
-    <li class="tuesday_text">Турменский язык</li>
-    <li class="tuesday_text">Эдебийат</li>
-    <li class="tuesday_text">Физкультура</li>
-    <li class="tuesday_text">География</li>
-    <li class="tuesday_text">Биология</li>
-</ol>
-<div class="day_wednesday">
-    <h2 class="day_wednesday_tex" ></h2>
-</div>
-<div class="schedule_on_wednesday">
-    <ol>
-        <li class="wednesday_text">История Туркменистана</li>
-        <li class="wednesday_text">О.Г.П</li>
-        <li class="wednesday_text">Английский язык</li>
-        <li class="wednesday_text">Алгебра</li>
-        <li class="wednesday_text">Физика</li>
-        <li class="wednesday_text">О.Ж.Д</li>
-    </ol>
-</div>
-<div class="day_thursday">
-    
-</div>
-<div class="schedule_on_thursday">
-    <ol>
-        <li class="thursday_text">Литература</li>
-        <li class="thursday_text">Биология</li>
-        <li class="thursday_text">Геометрия</li>
-        <li class="thursday_text">Химия</li>
-        <li class="thursday_text">История Туркменистана</li>
-        <li class="thursday_text">История всеобщая</li>
-    </ol>
-</div>
-
-
-</div>
-        <div class="link">
-            <a class="link_href" href="#"><</a>
-            <a class="link_href" href="#">></a>
-        </div>-->
-       
-        <h1><p id="output"></p></h1>
-        <script src="schedule.js"></script>
-    </body>
-</html>
-        <div class="schedule">
-            <h1 class="schedule_text">Расписание</h1>
-        </div>
-        <div class="day">
-            <h2 class="day_text">Понедельник</h2>
-        </div>
-        <div class="schedule_on_monday">
-            <ol class="monday">
-                <li class="monday_text">Химия</li>
-
-                <li class="monday_text">Физика</li>
-
-                <li class="monday_text">И.К.Т</li>
-
-                <li class="monday_text">Геометрия</li>
+        <header>
+            <h1>Расписание</h1>
+            <h2 id="dayTitle"></h2>
+        </header>
+        <main>
+            <ol class="schedule__day _hidden">
+                <li>Выходной</li>
             </ol>
+            <ol class="schedule__day _active">
+                <li>Химия</li>
+                <li>Физика</li>
+                <li>И.К.Т</li>
+                <li>Геометрия</li>
+            </ol>
+            <ol class="schedule__day _hidden">
+                <li>Литература</li>
+                <li>Турменский язык</li>
+                <li>Эдебийат</li>
+                <li>Физкультура</li>
+                <li>География</li>
+                <li>Биология</li>
+            </ol>
+
+            <ol class="schedule__day _hidden">
+                <li>История Туркменистана</li>
+                <li>О.Г.П</li>
+                <li>Английский язык</li>
+                <li>Алгебра</li>
+                <li>Физика</li>
+                <li>О.Ж.Д</li>
+            </ol>
+            <ol class="schedule__day _hidden">
+                <li>Литература</li>
+                <li>Биология</li>
+                <li>Геометрия</li>
+                <li>Химия</li>
+                <li>История Туркменистана</li>
+                <li>История всеобщая</li>
+            </ol>
+            <ol class="schedule__day _hidden">
+                <li>Литература</li>
+                <li>Биология</li>
+                <li>Геометрия</li>
+                <li>Химия</li>
+                <li>История Туркменистана</li>
+                <li>История всеобщая</li>
+            </ol>
+            <ol class="schedule__day _hidden">
+                <li>Литература</li>
+                <li>Биология</li>
+                <li>Геометрия</li>
+                <li>Химия</li>
+                <li>История Туркменистана</li>
+                <li>История всеобщая</li>
+            </ol>
+        </main>
+        <div class="arrow">
+            <button class="arrow__back"><</button>
+            <button class="arrow__next">></button>
         </div>
-        <div class="link">
-            <a class="link_href" href="#"><</a>
-            <a class="link_href" href="#">></a>
-        </div>
+        <script src="schedule.js"></script>
     </body>
 </html>
