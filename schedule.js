@@ -61,3 +61,82 @@ buttonNext.addEventListener('click', () => {
     scheduleText[++caunt].classList.add('_active');
     switchDay(caunt);
 });
+function toggleVtornik() {
+    var ele = document.getElementById("toggleTextVtornik");
+    var text = document.getElementById("displayText");
+    if(ele.style.display == "block") {
+            ele.style.display = "none";
+        text.innerHTML = "Вторник";
+    }
+    else {
+        ele.style.display = "block";
+        text.innerHTML = "Вторник";
+    }
+} 
+function historyTm() {
+    var ele = document.getElementById("historyTmText");
+    var text = document.getElementById("displayText");
+    if(ele.style.display == "block") {
+            ele.style.display = "none";
+        text.innerHTML = "История Туркменистана";
+    }
+    else {
+        ele.style.display = "block";
+        text.innerHTML = "История Туркменистана";
+    }
+} function ogp() {
+    var ele = document.getElementById("ogpText");
+    var text = document.getElementById("displayText");
+    if(ele.style.display == "block") {
+            ele.style.display = "none";
+        text.innerHTML = "О.Г.П";
+    }
+    else {
+        ele.style.display = "block";
+        text.innerHTML = "О.Г.П";
+    }
+} function eng() {
+    var ele = document.getElementById("engText");
+    var text = document.getElementById("displayText");
+    if(ele.style.display == "block") {
+            ele.style.display = "none";
+        text.innerHTML = "Английский язык";
+    }
+    else {
+        ele.style.display = "block";
+        text.innerHTML = "Английский язык";
+    }
+} function alg() {
+    var ele = document.getElementById("algText");
+    var text = document.getElementById("displayText");
+    if(ele.style.display == "block") {
+            ele.style.display = "none";
+        text.innerHTML = "Алгебра";
+    }
+    else {
+        ele.style.display = "block";
+        text.innerHTML = "Алгебра";
+    }
+} function physics() {
+    var ele = document.getElementById("physicsText");
+    var text = document.getElementById("displayText");
+    if(ele.style.display == "block") {
+            ele.style.display = "none";
+        text.innerHTML = "Физика";
+    }
+    else {
+        ele.style.display = "block";
+        text.innerHTML = "Физика";
+    }
+} function ogd() {
+    var ele = document.getElementById("ogdText");
+    var text = document.getElementById("displayText");
+    if(ele.style.display == "block") {
+            ele.style.display = "none";
+        text.innerHTML = "О.Ж.Д";
+    }
+    else {
+        ele.style.display = "block";
+        text.innerHTML = "О.Ж.Д";
+    }
+} 
