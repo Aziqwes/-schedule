@@ -61,18 +61,7 @@ buttonNext.addEventListener('click', () => {
     scheduleText[++caunt].classList.add('_active');
     switchDay(caunt);
 });
-function toggleVtornik() {
-    var ele = document.getElementById("toggleTextVtornik");
-    var text = document.getElementById("displayText");
-    if(ele.style.display == "block") {
-            ele.style.display = "none";
-        text.innerHTML = "Вторник";
-    }
-    else {
-        ele.style.display = "block";
-        text.innerHTML = "Вторник";
-    }
-} 
+
 function historyTm() {
     var ele = document.getElementById("historyTmText");
     var text = document.getElementById("displayText");
